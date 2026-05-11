@@ -1,37 +1,266 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Andrew's Kitchen</title>
+    <title>About Andrew</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            background: #f0f7e9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2663d4;
+            font-family: 'Times New Roman', serif;
+            font-size: 36px;
+            margin: 0;
+        }
+
+        h2 {
+            color: #1851b8;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        p {
+            color: #333333;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        img {
+            width: 300px;
+            border: 3px solid #2663d4;
+            border-radius: 10px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .box-style {
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            border: 1px solid #d1e7dd;
+        }
+
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .fixed-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2663d4;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .fixed-button:hover {
+            background-color: #1844a8;
+        }
+
+        .header-section { background-color: #e8f0fe; }
+        .intro-section { background-color: #d0e1fc; }
+        .hobby-section { background-color: #a6c8f7; }
+        .contact-section { background-color: #7ba8f5; }
+
+        .hobby-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .hobby-list li {
+            display: inline-block;
+            background-color: #2663d4;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .contact-button {
+            display: block;
+            background-color: #2663d4;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .contact-button:hover {
+            background-color: #1844a8;
+        }
+
+      
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+  
+        .info-card {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #2663d4;
+            background: #f5f9ff;
+            text-align: center;
+        }
+
+        .info-card h3 {
+            color: #2663d4;
+            margin-top: 10px;
+            font-size: 22px;
+        }
+
+        .profile-avatar {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #2663d4;
+            border-radius: 8px;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background: #e8f0fe;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 30px;
+                color: #1851b8;
+            }
+            img {
+                width: 300px;
+            }
+            .hobby-section {
+                background-color: #90caf9;
+            }
+            .contact-section {
+                background-color: #64b5f6;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                background: #d0e1fc;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 26px;
+                text-align: center;
+            }
+            h2 {
+                font-size: 20px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+            img {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+            .hobby-list li {
+                display: block;
+                text-align: center;
+                margin: 8px 0;
+            }
+            .contact-button {
+                width: 100%;
+            }
+            .fixed-button {
+                display: none; 
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1 title="Welcome to my food blog!">Andrew's Kitchen</h1>
-    <p title="Traditional food from China">
-        I love cooking and sharing recipes inspired by my Chinese culture.
-    </p>
+    <div class="header-section box-style sticky-header">
+        <h1>Hi, I'm Andrew</h1>
+    </div>
 
-    <img 
-        src="C:\Users\chenx\Desktop\f92e66755efbaa8093c2e16892c3ef1a.png" 
-        alt="Chinese pork and cabbage dumplings on a plate" 
-        title="My famous homemade dumplings recipe"
-        width="300" 
-        height="200"
-    >
+    <div class="intro-section box-style">
+        <p>Welcome to my personal page! I'm a person who loves learning new things and keeping fit. I enjoy exploring knowledge in different fields and keeping healthy through sports.</p>
+        
+        <img src="images/andrew-profile.jpg"  alt="Andrew's profile"> 
+        <img src="images/wyy.jpg"  alt="ndrew's profile">
+        <img src="images/beiliya.jpg"  alt="ndrew's profile">
+    </div>
 
-    <h3 title="What you need to make dumplings">Ingredients:</h3>
-    <ul>
-        <li title="Ground pork">Ground pork</li>
-        <li title="Napa cabbage">Napa cabbage</li>
-        <li title="Garlic and ginger">Garlic and ginger</li>
-        <li title="Soy sauce and sesame oil">Soy sauce and sesame oil</li>
-        <li title="Dumpling wrappers">Dumpling wrappers</li>
-    </ul>
+ 
+    
+    <h2>About Me</h2>
+    <div class="card-container">
+       
+        <div class="info-card">
+           
+            <img class="profile-avatar" src="images/study.jpg" alt="Learning">
+            <h3>Learning</h3>
+            <p>I love learning new knowledge and skills. I keep exploring different fields and improving myself every day.</p>
+        </div>
 
-    <h3 title="Step-by-step instructions">How to make dumplings:</h3>
-    <ol>
-        <li title="Mix the filling">Mix the pork, cabbage, and seasonings to make the filling.</li>
-        <li title="Fill the wrappers">Place a small amount of filling in the center of each wrapper.</li>
-        <li title="Fold the dumplings">Fold and seal the dumplings to prevent leaks.</li>
-        <li title="Cook the dumplings">Boil or steam the dumplings until fully cooked.</li>
-    </ol>
+       
+        <div class="info-card">
+            
+            <img class="profile-avatar" src="images/sports.jpg" alt="Sports">
+            <h3>Sports</h3>
+            <p>I enjoy all kinds of sports to keep healthy. Sports make me energetic and positive in life.</p>
+        </div>
+
+  
+        <div class="info-card">
+            
+            <img class="profile-avatar" src="images/lifestyle.jpg" alt="Andrew's lifestyle">
+            <h3>My Lifestyle</h3>
+            <p>Positive and curious mindset. Balance between learning and exercising, enjoying every meaningful day.</p>
+        </div>
+    </div>
+
+    <div class="hobby-section box-style">
+        <h2>My Hobbies</h2>
+        <ul class="hobby-list">
+            <li>Studying</li>
+            <li>Exercising</li>
+            <li>Reading</li>
+            <li>Keeping Fit</li>
+        </ul>
+    </div>
+
+    <div class="contact-section box-style">
+        <p>Want to know more about me? Feel free to connect!</p>
+        <a href="https://www.example.com/andrew" target="_blank" class="contact-button">Contact Me</a>
+    </div>
+
+    <button class="fixed-button">Back to Top</button>
 </body>
 </html>
