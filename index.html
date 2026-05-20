@@ -7,37 +7,39 @@
     <style>
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         
         body {
             background: #f0f7e9;
             font-family: Arial, sans-serif;
-            margin: 0;
             padding: 20px;
+            line-height: 1.6;
         }
 
         h1 {
             color: #2663d4;
             font-family: 'Times New Roman', serif;
             font-size: 36px;
-            margin: 0;
+            margin-bottom: 8px;
         }
 
         h2 {
             color: #1851b8;
             font-size: 24px;
-            margin-top: 0;
+            margin: 20px 0 15px;
         }
 
         p {
             color: #333333;
             font-size: 18px;
-            line-height: 1.5;
+            margin-bottom: 12px;
         }
 
         img {
-            width: 300px;
+            max-width: 100%;
             border: 3px solid #2663d4;
             border-radius: 10px;
         }
@@ -75,6 +77,8 @@
             border-radius: 5px;
             border: none;
             cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
         }
 
         .fixed-button:hover {
@@ -103,11 +107,12 @@
         .contact-button {
             display: block;
             background-color: #2663d4;
-            padding: 10px;
+            padding: 12px;
             margin-top: 10px;
             border-radius: 5px;
             text-align: center;
             width: fit-content;
+            transition: 0.3s;
         }
 
         .contact-button:hover {
@@ -119,33 +124,54 @@
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
-            margin: 30px 0;
+            margin: 20px 0 30px;
         }
 
   
         .info-card {
             flex: 1;
-            min-width: 250px;
+            min-width: 260px;
             padding: 20px;
             border-radius: 10px;
             border: 2px solid #2663d4;
             background: #f5f9ff;
             text-align: center;
+            transition: 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .info-card h3 {
             color: #2663d4;
-            margin-top: 10px;
+            margin: 12px 0;
             font-size: 22px;
         }
 
         .profile-avatar {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border: 2px solid #2663d4;
             border-radius: 8px;
             object-fit: cover;
             margin: 0 auto;
+        }
+
+        button {
+            padding: 8px 14px;
+            background: #2663d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1844a8;
         }
 
         @media (max-width: 768px) {
@@ -207,14 +233,15 @@
 <body>
     <div class="header-section box-style sticky-header">
         <h1>Hi, I'm Andrew</h1>
+        <p id="message">want to know more about this handsome man?</p>
+        <button type="button" onClick="changeMessage()">Click</button>
     </div>
 
     <div class="intro-section box-style">
         <p>Welcome to my personal page! I'm a person who loves learning new things and keeping fit. I enjoy exploring knowledge in different fields and keeping healthy through sports.</p>
         
-        <img src="images/andrew-profile.jpg"  alt="Andrew's profile"> 
-        <img src="images/wyy.jpg"  alt="ndrew's profile">
-        <img src="images/beiliya.jpg"  alt="ndrew's profile">
+        <img src="images/andrew-profile.jpg" alt="Andrew's profile"> 
+      
     </div>
 
  
@@ -258,9 +285,15 @@
 
     <div class="contact-section box-style">
         <p>Want to know more about me? Feel free to connect!</p>
-        <a href="https://www.example.com/andrew" target="_blank" class="contact-button">Contact Me</a>
+        <a href="https://www.bilibili.com/" target="_blank" class="contact-button">Contact Me</a>
     </div>
 
-    <button class="fixed-button">Back to Top</button>
+    <button class="fixed-button" onclick="window.scrollTo(0,0)">Back to Top</button>
+
+    <script>
+        function changeMessage() {
+            document.getElementById("message").textContent = "look down then!";
+        }
+    </script>
 </body>
 </html>
