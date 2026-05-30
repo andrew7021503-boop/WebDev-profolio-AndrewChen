@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>UN Global Goals</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #f0f7e9;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            transition: background 0.4s ease, color 0.4s ease;
+        }
+
+        body.dark-mode {
+            background: #222831;
+        }
+        body.dark-mode h1,
+        body.dark-mode h2,
+        body.dark-mode h3,
+        body.dark-mode p {
+            color: #ffffff;
+        }
+
+        .main-nav {
+            background-color: #2663d4;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 12px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+        .main-nav a:hover {
+            background-color: #1844a8;
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #2663d4;
+            font-family: 'Times New Roman', serif;
+            font-size: 36px;
+            margin-bottom: 8px;
+            transition: color 0.4s ease;
+        }
+        h2 {
+            color: #1851b8;
+            font-size: 24px;
+            margin: 20px 0 15px;
+            transition: color 0.4s ease;
+        }
+        h3 {
+            color: #2663d4;
+            font-size: 22px;
+            margin: 12px 0 8px;
+            transition: color 0.4s ease;
+        }
+        p {
+            color: #333333;
+            font-size: 18px;
+            margin-bottom: 12px;
+            transition: color 0.4s ease;
+        }
+
+        .box-style {
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            border: 1px solid #d1e7dd;
+            background-color: #c4daf8;
+            transition: background 0.4s ease, border-color 0.4s ease;
+        }
+        body.dark-mode .box-style {
+            background-color: #393e46;
+            border-color: #555;
+        }
+
+        .fixed-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2663d4;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .fixed-button:hover {
+            background-color: #1844a8;
+        }
+
+        button {
+            padding: 8px 14px;
+            background: #2663d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #1844a8;
+        }
+
+        .theme-btn {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background: #e8f0fe;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 30px;
+                color: #1851b8;
+            }
+            .main-nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                background: #d0e1fc;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 26px;
+                text-align: center;
+            }
+            h2 {
+                font-size: 20px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+            .fixed-button {
+                display: none; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="design-thinking.html">Design Thinking</a>
+        <a href="global-goals.html">UN Global Goals</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="behind-the-curtain.html">Behind the Curtain</a>
+    </nav>
+
+    <button class="theme-btn" onclick="toggleDarkMode()">Toggle Light/Dark Background</button>
+
+    <div class="box-style">
+        <h1>UN Sustainable Development Goals</h1>
+        <h2>Goal 4: Quality Education</h2>
+
+        <p>The UN Global Goal I am most interested in is Quality Education. Equal and inclusive education gives every person a fair chance to learn, grow and achieve their dreams.</p>
+
+        <p>As a web developer, I hope to create useful educational websites to share knowledge and learning resources online. I believe high-quality education can help build a better and more equal world for everyone.</p>
+
+        <p>Everyone deserves the right to study and improve themselves. I will keep learning web skills so that I can make more helpful content for learners in the future.</p>
+    </div>
+
+    <button class="fixed-button" onclick="window.scrollTo(0,0)">Back to Top</button>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>

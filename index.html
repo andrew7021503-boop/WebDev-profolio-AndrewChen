@@ -1,299 +1,87 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>About Andrew</title>
-  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        
-        body {
-            background: #f0f7e9;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        h1 {
-            color: #2663d4;
-            font-family: 'Times New Roman', serif;
-            font-size: 36px;
-            margin-bottom: 8px;
-        }
-
-        h2 {
-            color: #1851b8;
-            font-size: 24px;
-            margin: 20px 0 15px;
-        }
-
-        p {
-            color: #333333;
-            font-size: 18px;
-            margin-bottom: 12px;
-        }
-
-        img {
-            max-width: 100%;
-            border: 3px solid #2663d4;
-            border-radius: 10px;
-        }
-
-        a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .box-style {
-            padding: 20px;
-            margin-bottom: 25px;
-            border-radius: 10px;
-            border: 1px solid #d1e7dd;
-        }
-
-        .sticky-header {
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        .fixed-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #2663d4;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        .fixed-button:hover {
-            background-color: #1844a8;
-        }
-
-        .header-section { background-color: #e8f0fe; }
-        .intro-section { background-color: #d0e1fc; }
-        .hobby-section { background-color: #a6c8f7; }
-        .contact-section { background-color: #7ba8f5; }
-
-        .hobby-list {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .hobby-list li {
-            display: inline-block;
-            background-color: #2663d4;
-            color: white;
-            padding: 10px 15px;
-            margin: 5px;
-            border-radius: 5px;
-        }
-
-        .contact-button {
-            display: block;
-            background-color: #2663d4;
-            padding: 12px;
-            margin-top: 10px;
-            border-radius: 5px;
-            text-align: center;
-            width: fit-content;
-            transition: 0.3s;
-        }
-
-        .contact-button:hover {
-            background-color: #1844a8;
-        }
-
-      
-        .card-container {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin: 20px 0 30px;
-        }
-
-  
-        .info-card {
-            flex: 1;
-            min-width: 260px;
-            padding: 20px;
-            border-radius: 10px;
-            border: 2px solid #2663d4;
-            background: #f5f9ff;
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        .info-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .info-card h3 {
-            color: #2663d4;
-            margin: 12px 0;
-            font-size: 22px;
-        }
-
-        .profile-avatar {
-            width: 180px;
-            height: 180px;
-            border: 2px solid #2663d4;
-            border-radius: 8px;
-            object-fit: cover;
-            margin: 0 auto;
-        }
-
-        button {
-            padding: 8px 14px;
-            background: #2663d4;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background: #1844a8;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                background: #e8f0fe;
-                padding: 15px;
-            }
-            h1 {
-                font-size: 30px;
-                color: #1851b8;
-            }
-            img {
-                width: 300px;
-            }
-            .hobby-section {
-                background-color: #90caf9;
-            }
-            .contact-section {
-                background-color: #64b5f6;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                background: #d0e1fc;
-                padding: 10px;
-            }
-            h1 {
-                font-size: 26px;
-                text-align: center;
-            }
-            h2 {
-                font-size: 20px;
-                text-align: center;
-            }
-            p {
-                font-size: 16px;
-                text-align: center;
-            }
-            img {
-                width: 100%;
-                display: block;
-                margin: 0 auto;
-            }
-            .hobby-list li {
-                display: block;
-                text-align: center;
-                margin: 8px 0;
-            }
-            .contact-button {
-                width: 100%;
-            }
-            .fixed-button {
-                display: none; 
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Andrew | Web Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
-    <div class="header-section box-style sticky-header">
-        <h1>Hi, I'm Andrew</h1>
-        <p id="message">want to know more about this handsome man?</p>
-        <button type="button" onClick="changeMessage()">Click</button>
-    </div>
-
-    <div class="intro-section box-style">
-        <p>Welcome to my personal page! I'm a person who loves learning new things and keeping fit. I enjoy exploring knowledge in different fields and keeping healthy through sports.</p>
-        
-        <img src="images/andrew-profile.jpg" alt="Andrew's profile"> 
-      
-    </div>
-
- 
-    
-    <h2>About Me</h2>
-    <div class="card-container">
-       
-        <div class="info-card">
-           
-            <img class="profile-avatar" src="images/study.jpg" alt="Learning">
-            <h3>Learning</h3>
-            <p>I love learning new knowledge and skills. I keep exploring different fields and improving myself every day.</p>
-        </div>
-
-       
-        <div class="info-card">
-            
-            <img class="profile-avatar" src="images/sports.jpg" alt="Sports">
-            <h3>Sports</h3>
-            <p>I enjoy all kinds of sports to keep healthy. Sports make me energetic and positive in life.</p>
-        </div>
 
   
-        <div class="info-card">
-            
-            <img class="profile-avatar" src="images/lifestyle.jpg" alt="Andrew's lifestyle">
-            <h3>My Lifestyle</h3>
-            <p>Positive and curious mindset. Balance between learning and exercising, enjoying every meaningful day.</p>
-        </div>
-    </div>
+  <audio id="bgm" loop>
+    <source src="bgm.mp3" type="audio/mpeg" />
+  </audio>
 
-    <div class="hobby-section box-style">
-        <h2>My Hobbies</h2>
-        <ul class="hobby-list">
-            <li>Studying</li>
-            <li>Exercising</li>
-            <li>Reading</li>
-            <li>Keeping Fit</li>
-        </ul>
-    </div>
+  
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="design-thinking.html">Design Thinking</a>
+    <a href="global-goals.html">UN Global Goals</a>
+    <a href="accessibility.html">Accessibility</a>
+    <a href="behind-the-curtain.html">Behind the Curtain</a>
+  </nav>
 
-    <div class="contact-section box-style">
-        <p>Want to know more about me? Feel free to connect!</p>
-        <a href="https://www.bilibili.com/" target="_blank" class="contact-button">Contact Me</a>
-    </div>
+ 
+  <div class="box-style">
+    <h1>Hi, I'm Andrew | Web Developer</h1>
+    <p id="message">want to know more about this handsome man?</p>
 
-    <button class="fixed-button" onclick="window.scrollTo(0,0)">Back to Top</button>
+    <button onclick="changeMessage()">Click</button>
+    <button onclick="toggleDarkMode()">Toggle Light/Dark</button>
+  </div>
 
-    <script>
-        function changeMessage() {
-            document.getElementById("message").textContent = "look down then!";
-        }
-    </script>
+ 
+  <div class="box-style">
+    <h2>Introduction to Me as a Web Developer</h2>
+    <p>
+      Welcome to my personal portfolio website!  
+      I am Andrew, a passionate web developer who enjoys creating clean, 
+      responsive and user-friendly websites.
+    </p>
+    <img src="images/andrew-profile.jpg" alt="Andrew's profile">
+  </div>
+
+
+  <div class="box-style">
+    <h2>Work</h2>
+    <p>
+      I have worked on real-world web projects focusing on clean code, 
+      accessibility and modern design standards.
+    </p>
+    <img src="images/work.jpg" alt="Work experience">
+  </div>
+
+  
+  <div class="box-style">
+    <h2>Projects</h2>
+    <p>
+      My projects include personal blogs, game introduction pages, 
+      and hobby showcases built with HTML, CSS and JavaScript.
+    </p>
+    <img src="images/sports.jpg" alt="Project showcase">
+  </div>
+
+ 
+  <div class="box-style">
+    <h2>Hobbies</h2>
+    <p>
+      Outside of coding, I enjoy studying, exercising, reading books, 
+      and keeping a healthy lifestyle.
+    </p>
+    <img src="images/lifestyle.jpg" alt="Hobbies">
+  </div>
+
+  
+  <button class="music-btn-fixed" onclick="toggleMusic()">
+    ▶ Play Music
+  </button>
+
+
+  <button class="top-btn-fixed" onclick="window.scrollTo(0,0)">
+    ↑ Top
+  </button>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
