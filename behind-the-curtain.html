@@ -8,7 +8,7 @@
 </head>
 <body>
 
-
+  
   <nav class="main-nav">
     <a href="index.html">Home</a>
     <a href="design-thinking.html">Design Thinking</a>
@@ -18,47 +18,50 @@
   </nav>
 
   
+  <button class="theme-btn" onclick="toggleDarkMode()">Toggle Light/Dark Background</button>
+  
+  
   <div class="box-style">
     <h1>Behind the Curtain</h1>
-    <p>
+    
       This page shows the process, tools and thinking behind my portfolio website.
-    </p>
+    
   </div>
 
   <div class="box-style">
     <h2>Screenshots of my code</h2>
-    <p>[ Write your design thinking explanation here. ]</p>
-    <img src="images/index.jpg" alt="Design thinking screenshot">
-    <img src="images/global.jpg" alt="Design thinking screenshot">
-    <img src="images/design.jpg" alt="Design thinking screenshot">
-    <img src="images/bgm.jpg" alt="Design thinking screenshot">
-    <img src="images/behind.jpg" alt="Design thinking screenshot">
-    <img src="images/accessibility.jpg" alt="Design thinking screenshot">
-    <img src="images/styles.jpg" alt="Design thinking screenshot">
-    <img src="images/scripts.jpg" alt="Design thinking screenshot">
+    
+    
+    
+    <div class="hobby-images">
+      <img src="images/index.jpg" alt="Design thinking screenshot">
+      <img src="images/global.jpg" alt="Design thinking screenshot">
+      <img src="images/design.jpg" alt="Design thinking screenshot">
+      <img src="images/bgm.jpg" alt="Design thinking screenshot">
+      <img src="images/behind.jpg" alt="Design thinking screenshot">
+      <img src="images/accessibility.jpg" alt="Design thinking screenshot">
+      <img src="images/styles.jpg" alt="Design thinking screenshot">
+      <img src="images/scripts.jpg" alt="Design thinking screenshot">
+    </div>
   </div>
 
-  
   <div class="box-style">
-    <h2>Development Process</h2>
-    <p>[ Write your development process here. ]</p>
-    <img src="images/placeholder-code.jpg" alt="Code screenshot">
+    <h2>Explanation of challenging parts</h2>
+    <h3>The most challenging part was implementing the Dark Mode toggle​ and the Background Music player. For the dark mode, I had to learn how to increase CSS specificity​ (using .dark-mode .main-nav) to override the default styles. For the music player, the challenge was syncing the button text with the audio state. I had to write JavaScript logic to check if the music was playing （and change the button text from "Play" to "Pause" ）. These tasks taught me how HTML, CSS, and JavaScript must work together.</h3>
+    
   </div>
 
- 
   <div class="box-style">
-    <h2>Tools & Technologies</h2>
-    <p>[ Write your tools and technologies here. ]</p>
-    <img src="images/placeholder-tools.jpg" alt="Tools screenshot">
+    <h2>Developer tools usage</h2>
+    <h3>I have used Live Server to develop the Background Music player. Since audio files require a local server environment to function correctly in a browsers, which means, I have to use a Live Server. When I first tried to open the HTML file directly, the music would not play due to security restrictions. However, once I ran the site through Live Server, the bgm.mp3 file has loaded. Without Live Server providing a stable localhost environment, I would not have been able to successfully implant my favorite music into the website.</h3>
+    
   </div>
 
-  
   <div class="box-style">
     <h2>Challenges & Reflection</h2>
-    <p>[ Write your challenges and reflection here. ]</p>
-    <img src="images/placeholder-reflection.jpg" alt="Reflection screenshot">
+    <h3>From this project, I learned that planning is more important than coding. At first, I just started coding randomly(when I am learning), which caused many layout issues. Later, I realized that designing the structure first saves time. I also learned the power of separation of concerns: keeping HTML (structure), CSS (style), and JavaScript (behavior) separate. This made debugging much easier. Finally, I learned that small details, like adding the framework and the addition of background music and so on, I also learned that web development is an exercise in patience and creativity, I'm very happy to have received this kind of training also.</h3>
+    
   </div>
-
 
   <button class="top-btn-fixed" onclick="window.scrollTo(0,0)">↑ Top</button>
 

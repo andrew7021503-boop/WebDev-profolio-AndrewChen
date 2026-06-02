@@ -4,159 +4,15 @@
     <title>Design Thinking Process</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background: #f0f7e9;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            line-height: 1.6;
-            transition: background 0.4s ease, color 0.4s ease;
-        }
-
-        body.dark-mode {
-            background: #222831;
-        }
-        body.dark-mode h1,
-        body.dark-mode h2,
-        body.dark-mode p {
-            color: #ffffff;
-        }
-
-        .main-nav {
-            background-color: #2663d4;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .main-nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            margin: 0 12px;
-            padding: 6px 10px;
-            border-radius: 4px;
-            transition: 0.3s;
-        }
-        .main-nav a:hover {
-            background-color: #1844a8;
-            text-decoration: underline;
-        }
-
-        h1 {
-            color: #2663d4;
-            font-family: 'Times New Roman', serif;
-            font-size: 36px;
-            margin-bottom: 8px;
-            transition: color 0.4s ease;
-        }
-        h2 {
-            color: #1851b8;
-            font-size: 24px;
-            margin: 20px 0 15px;
-            transition: color 0.4s ease;
-        }
-        p {
-            color: #333333;
-            font-size: 18px;
-            margin-bottom: 12px;
-            transition: color 0.4s ease;
-        }
-
-        .box-style {
-            padding: 20px;
-            margin-bottom: 25px;
-            border-radius: 10px;
-            border: 1px solid #d1e7dd;
-            background-color: #d0e1fc;
-            transition: background 0.4s ease, border-color 0.4s ease;
-        }
-        body.dark-mode .box-style {
-            background-color: #393e46;
-            border-color: #555;
-        }
-
-        .fixed-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #2663d4;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-        .fixed-button:hover {
-            background-color: #1844a8;
-        }
-
-        button {
-            padding: 8px 14px;
-            background: #2663d4;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        button:hover {
-            background: #1844a8;
-        }
-
-        .theme-btn {
-            margin-bottom: 15px;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                background: #e8f0fe;
-                padding: 15px;
-            }
-            h1 {
-                font-size: 30px;
-                color: #1851b8;
-            }
-            .main-nav a {
-                display: inline-block;
-                margin: 5px 8px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                background: #d0e1fc;
-                padding: 10px;
-            }
-            h1 {
-                font-size: 26px;
-                text-align: center;
-            }
-            h2 {
-                font-size: 20px;
-                text-align: center;
-            }
-            p {
-                font-size: 16px;
-                text-align: center;
-            }
-            .fixed-button {
-                display: none; 
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles/main.css" />
+    
 </head>
 <body>
+
+    <audio id="bgm" loop>
+    <source src="bgm.mp3" type="audio/mpeg" />
+  </audio>
+
     <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="design-thinking.html">Design Thinking</a>
@@ -171,28 +27,34 @@
         <h1>My Design Thinking Process</h1>
         <p>I used the five stages of Design Thinking to build this portfolio website step by step.</p>
 
-        <h2>1. Empathize</h2>
-        <p>I thought about website visitors. Users need clear navigation, readable text and comfortable layout on both computer and mobile phones.</p>
+        <img src="images/design1.jpg" alt="design">
 
-        <h2>2. Define</h2>
-        <p>I made a clear goal: create a personal portfolio to show my identity, projects, ideas on global goals and accessibility features.</p>
+
+        <h2>1. Goal</h2>
+        <p>My goal is to make a personal portfolio to show my identity, projects, ideas on global goals and accessibility features.</p>
+
+        <h2>2. accessibility</h2>
+        <p>I thought about website visitors. It is important to let them clear navigation, readable text and comfortable layout on both computer and mobile phones.</p>
 
         <h2>3. Ideate</h2>
-        <p>I planned page structure: use a navigation bar to switch pages, apply card style for projects, and use soft colors for a friendly visual effect.</p>
+        <p>I planned page structure: use a navigation bar to switch pages, apply card style for projects, and use soft colors for a friendly visual effect(you can switch to dark colours if you prefer).</p>
 
         <h2>4. Prototype</h2>
-        <p>I first built HTML structure, then added CSS styles. I divided content into different sections and adjusted layout for different screens.</p>
+        <p>I built HTML structure, then added CSS styles. I divided content into different sections(less codes) and adjusted layout for different screens.</p>
 
-        <h2>5. Test & Iterate</h2>
-        <p>I tested the website on desktop and mobile. I modified font size, spacing and colors to fix layout problems and improve user experience.</p>
+        <h2>5. Adding details</h2>
+        <p>I modified font size, spacing and colors to fix layout problems and improve user experience, also adding background music, contact information, and pictures.</p>
     </div>
 
-    <button class="fixed-button" onclick="window.scrollTo(0,0)">Back to Top</button>
+    <button class="music-btn-fixed" onclick="toggleMusic()">
+    ▶ Play Music
+  </button>
 
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-        }
-    </script>
+
+  <button class="top-btn-fixed" onclick="window.scrollTo(0,0)">
+    ↑ Top
+  </button>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>

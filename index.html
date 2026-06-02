@@ -23,60 +23,73 @@
   </nav>
 
  
-  <div class="box-style">
+  <div class="box-style fade-in">
     <h1>Hi, I'm Andrew | Web Developer</h1>
-    <p id="message">want to know more about this handsome man?</p>
-
-    <button onclick="changeMessage()">Click</button>
-    <button onclick="toggleDarkMode()">Toggle Light/Dark</button>
+    <p id="message">want to know more about this handsome man?
+    
+    
+    <div class="btn-group">
+      <button onclick="changeMessage()">Click</button>
+      <button onclick="toggleDarkMode()" class="theme-btn">Toggle Light/Dark</button>
+    </div>
   </div>
 
  
-  <div class="box-style">
+  <div class="box-style fade-in">
     <h2>Introduction to Me as a Web Developer</h2>
-    <p>
-      Welcome to my personal portfolio website!  
+    
+     <h3> Welcome to my personal portfolio website!  
       I am Andrew, a passionate web developer who enjoys creating clean, 
-      responsive and user-friendly websites.
-    </p>
-    <img src="images/andrew-profile.jpg" alt="Andrew's profile">
-  </div>
-
-
-  <div class="box-style">
-    <h2>Work</h2>
-    <p>
-      I have worked on real-world web projects focusing on clean code, 
-      accessibility and modern design standards.
-    </p>
-    <img src="images/work.jpg" alt="Work experience">
+      responsive and user-friendly websites.</h3>
+    
+    
+   
+    <img src="images/andrew-profile.jpg" alt="Andrew's profile" class="profile-img">
   </div>
 
   
-  <div class="box-style">
-    <h2>Projects</h2>
-    <p>
-      My projects include personal blogs, game introduction pages, 
-      and hobby showcases built with HTML, CSS and JavaScript.
-    </p>
-    <img src="images/sports.jpg" alt="Project showcase">
+  <div class="box-style fade-in">
+    <h1>Sports</h1>
+    
+      <h3>Cycling clears my head all the time after long studys. Also riding through the city helps me stay fit and relieves stress. It feels amazing to explore new places on two wheels and watch the kilometers add up.</h3>
+    
+    <div class="hobby-images">
+      <img src="images/small.jpg" alt="Sports pictures">
+      <img src="images/data.jpg" alt="Sports pictures">
+      <img src="images/bike.jpg" alt="Sports pictures">
+    </div>
+  </div>
+  
+  
+  <div class="box-style fade-in">
+    <h1>Traveling</h1>
+    
+      <h3>Traveling opens my eyes to new cultures and ideas. It let's me experiencing different lifestyles (It is also fun), It teaches me to adapt to new situations, I love it.</h3>
+    
+    <div class="hobby-images">
+      <img src="images/small2.jpg" alt="Traveling pictures">
+      <img src="images/sports.jpg" alt="Traveling pictures">
+      <img src="images/travel.jpg" alt="Traveling pictures">
+    </div>
   </div>
 
- 
-  <div class="box-style">
-    <h2>Hobbies</h2>
-    <p>
-      Outside of coding, I enjoy studying, exercising, reading books, 
-      and keeping a healthy lifestyle.
-    </p>
-    <img src="images/lifestyle.jpg" alt="Hobbies">
+  
+  <div class="box-style fade-in">
+    <h1>Gaming</h1>
+    
+      <h3>Gaming is always my biggest way to relax and recharge. It has maybe sharpens my problem-solving skills and strategic thinking. But even with out proving, Gaming has for sure makes me a better.</h3>
+    
+    <div class="hobby-images">
+      <img src="images/armored.jpg" alt="Gaming pictures">
+      <img src="images/final.jpg" alt="Gaming pictures">
+      <img src="images/naruto.jpg" alt="Gaming pictures">
+    </div>
   </div>
-
+  
   
   <button class="music-btn-fixed" onclick="toggleMusic()">
     ▶ Play Music
   </button>
-
 
   <button class="top-btn-fixed" onclick="window.scrollTo(0,0)">
     ↑ Top
