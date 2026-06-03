@@ -8,6 +8,10 @@
 </head>
 <body>
 
+   <audio id="bgm" loop>
+        <source src="bgm.mp3" type="audio/mpeg" />
+    </audio>
+
   
   <nav class="main-nav">
     <a href="index.html">Home</a>
@@ -24,7 +28,7 @@
   <div class="box-style">
     <h1>Behind the Curtain</h1>
     
-      This page shows the process, tools and thinking behind my portfolio website.
+      <h3>This page shows the process, tools and thinking behind my portfolio website.</h3>
     
   </div>
 
@@ -63,7 +67,15 @@
     
   </div>
 
-  <button class="top-btn-fixed" onclick="window.scrollTo(0,0)">↑ Top</button>
+   <button class="music-btn-fixed" onclick="toggleMusic()">
+    ▶ Play Music
+  </button>
+
+
+  <button class="top-btn-fixed" onclick="window.scrollTo(0,0)">
+    ↑ Top
+  </button>
+
 
   <script src="scripts/main.js"></script>
 </body>
